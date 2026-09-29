@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -24,4 +24,17 @@ export class Home {
     {name:"Aymen",age:23},
     {name:"Anis",age:24}
   ]
+
+//
+count=0;
+//signal
+counts=signal(0);
+
+incrementSimple(){
+  this.count++;
+}
+///signal
+increment() {
+    this.counts.update(v => v + 1);
+  }
 }

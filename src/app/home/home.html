@@ -1,5 +1,5 @@
 <p>4ssa4</p>
-<h1>Bienvenue, {{ nom }}!</h1>
+<h1> Bienvenue, {{ nom }}!</h1>
 <img [src]="imgurl" alt="Angular Logo" width="200" height="200">
 <button (click)="bonjour()">Cliquez ici pour dire bonjour</button>
 <br>
@@ -18,3 +18,9 @@
 @for (s2 of students2; track $index) {
     {{s2.name}} ({{s2.age}})
 }
+
+
+<h1>Compteur simple: {{ count }}</h1>
+<button (click)="incrementSimple()">Incrémenter le compteur simple</button>
+<h1>Compteur signal: {{ counts() }}</h1>
+<button (click)="increment()">Incrémenter le compteur signal</button>
