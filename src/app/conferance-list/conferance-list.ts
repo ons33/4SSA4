@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { ConferanceDetails } from '../conferance-details/conferance-details';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-conferance-list',
-  imports: [ConferanceDetails],
+  imports: [RouterLink, ConferanceDetails],
   templateUrl: './conferance-list.html',
   styleUrl: './conferance-list.css',
 })
