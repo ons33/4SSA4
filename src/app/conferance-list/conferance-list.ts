@@ -8,11 +8,11 @@ import { ConferanceDetails } from '../conferance-details/conferance-details';
   styleUrl: './conferance-list.css',
 })
 export class ConferanceList {
-  conferances = [
-    { name: 'Angular', date: '2023-01-15', location: 'New York' },
-    { name: 'React', date: '2023-02-20', location: 'San Francisco' },
-    { name: 'Vue.js', date: '2023-03-10', location: 'Los Angeles' },
-  ];
+  conferances :any[]=[
+    {id:1,name:"angular",date:"2023-01-01",place:"tunis"},
+    {id:2,name:"react",date:"2023-02-01",place:"sfax"},
+    {id:3,name:"vue",date:"2023-03-01",place:"sousse"},
+  ]
 
   inc(){alert('increment');}
 }
